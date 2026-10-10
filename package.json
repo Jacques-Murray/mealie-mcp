@@ -2,8 +2,21 @@
   "name": "mealie-mcp-server",
   "version": "1.0.0",
   "type": "module",
-  "bin": { "mealie-mcp-server": "dist/index.js" },
-  "scripts": { "build": "tsc", "start": "node dist/index.js" },
-  "dependencies": { "@modelcontextprotocol/sdk": "^1.12.0", "zod": "^3.25.0" },
-  "devDependencies": { "typescript": "^5.6.0", "@types/node": "^22.0.0" }
+  "bin": {
+    "mealie-mcp-server": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "npm run build && vitest run"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.9"
+  }
 }
